@@ -13,7 +13,7 @@ build:
        - cd micro-www && docker build -t test/micro-www .
        - cd ..
        - cd micro-api && docker build -t test/micro-api .
-       - docker tag -f test/micro-www:latest test/micro-www:latest 
+       - docker tag -f test/micro-www:latest test/micro-www:latest
        - docker tag -f test/micro-api:latest test/micro-api:latest
        - docker push test/micro-api:latest
        - docker push test/micro-www:latest
@@ -22,5 +22,3 @@ integrations:
     hub:
         - integrationName: meerkatsregistry
           type: docker
-
-
